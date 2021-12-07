@@ -1,6 +1,8 @@
-# flutter_onboarding
+# Flutter Onboarding Screen
 
-A new Flutter project.
+A  Flutter Project that using GetX Framework .
+
+![flutter onboarding screen with getx](./onboarding.png)
 
 ## Getting Started
 
