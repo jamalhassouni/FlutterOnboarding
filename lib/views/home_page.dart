@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_onboarding/views/onboarding_page.dart';
+import 'package:flutter_onboarding/core/global/routes/routes.dart';
 import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextButton(
-              onPressed: () => Get.to(() => OnboardingPage()),
+              onPressed: () => Get.offNamed(RouteNames.onboardingPage),
               child: const Text("Go to onboarding Screen"),
             ),
             TextButton(

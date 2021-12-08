@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_onboarding/core/global/routes/routes.dart';
-import 'package:flutter_onboarding/views/onboarding_page.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -21,6 +20,5 @@ class MyApp extends StatelessWidget {
       getPages: getPages(),
       initialRoute: RouteNames.onboardingPage,
     );
-    ;
   }
 }

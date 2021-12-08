@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_onboarding/controllers/onboarding_controller.dart';
-import 'package:flutter_onboarding/views/home_page.dart';
+import 'package:flutter_onboarding/core/global/routes/routes.dart';
 import 'package:get/get.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:flutter_onboarding/core/global/extensions/color_extension.dart';
@@ -142,7 +142,7 @@ class OnboardingPage extends StatelessWidget {
                 right: 20,
                 top: 20,
                 child: InkWell(
-                  onTap: () => Get.to(() => const HomePage()),
+                  onTap: () => Get.offNamed(RouteNames.homePage),
                   child: Text("Skip",
                       style: TextStyle(
                           fontWeight: FontWeight.w700,

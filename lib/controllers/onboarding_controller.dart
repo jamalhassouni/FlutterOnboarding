@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_onboarding/core/global/routes/routes.dart';
 import 'package:flutter_onboarding/models/onboarding_info.dart';
-import 'package:flutter_onboarding/views/home_page.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get/get.dart';
 
@@ -12,7 +12,7 @@ class OnboardingController extends GetxController {
 
   nextAction() {
     if (isLastPage) {
-      Get.to(() => const HomePage());
+      Get.offNamed(RouteNames.homePage);
     } else {
       pageController.nextPage(
           duration: const Duration(milliseconds: 300), curve: Curves.ease);
@@ -20,8 +20,6 @@ class OnboardingController extends GetxController {
   }
 
   skipAction() {
-    // ignore: avoid_print
-    print("here is next!");
     pageController.previousPage(
         duration: const Duration(milliseconds: 300), curve: Curves.ease);
   }
